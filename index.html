@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BE HIVE EVENTS — Agence Événementielle Premium | Tunisie</title>
+    <meta name="description" content="Agence evenementielle premium specialisee MICE, Pharma et Institutionnel. Voyages, hotels, omra et evenements sur mesure en Tunisie.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="site-header" id="top">
+    <div class="header-inner container">
+        <a class="logo" href="#top">
+            <span class="logo-text">BE <span class="text-gold">HIVE</span></span>
+        </a>
+        <nav class="primary-nav" aria-label="Navigation">
+            <a href="#hotels" class="nav-link active">Hotels Tunisie</a>
+            <a href="#voyages" class="nav-link">Voyage Organise</a>
+            <a href="#omra" class="nav-link">Omra</a>
+            <a href="#vol" class="nav-link">Vol</a>
+            <a href="#services" class="nav-link">Event Services</a>
+        </nav>
+        <div class="header-actions">
+            <a href="tel:+21629111000" class="phone-btn">
+                <i class="fa-solid fa-phone"></i> +216 29 111 000
+            </a>
+            <a href="#devis" class="btn btn-primary btn-sm">Devis</a>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#hotels" class="mobile-nav-link">Hotels Tunisie</a>
+            <a href="#voyages" class="mobile-nav-link">Voyage Organise</a>
+            <a href="#omra" class="mobile-nav-link">Omra</a>
+            <a href="#vol" class="mobile-nav-link">Vol</a>
+            <a href="#services" class="mobile-nav-link">Event Services</a>
+            <a href="#devis" class="mobile-nav-link mobile-cta">Demander un Devis</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section" id="hotels" style="background-image: url('https://image.resabooking.com/images/galerie/slide_1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <span class="hero-badge"><i class="fa-solid fa-star"></i> Agence Evenementielle Premium — Tunisie</span>
+        <h1 class="hero-title">Votre voyage d'exception <span class="text-gold">commence ici</span></h1>
+        <p class="hero-subtitle">Beneficiez du reseau No1 de reservation d'hotels et sejours en Tunisie. Hotels, voyages organises, Omra, vols et conventions amicales.</p>
+    </div>
+    <!-- Hero Mobile Dots -->
+    <div class="hero-mobile-dots">
+        <button class="hero-dot active" data-slide="0"></button>
+        <button class="hero-dot" data-slide="1"></button>
+        <button class="hero-dot" data-slide="2"></button>
+    </div>
+</section>
+
+<!-- ========== SEARCH WIDGET ========== -->
+<section class="search-widget-container" aria-label="Recherche">
+    <div class="search-widget-tabs">
+        <button class="search-tab active" onclick="switchTab('hotels')">
+            <i class="fa-solid fa-hotel"></i> Hotels Tunisie
+        </button>
+        <button class="search-tab" onclick="switchTab('omra')">
+            <i class="fa-solid fa-kaaba"></i> Omra
+        </button>
+        <button class="search-tab" onclick="switchTab('voyages')">
+            <i class="fa-solid fa-earth-americas"></i> Voyage organise
+        </button>
+        <button class="search-tab" onclick="switchTab('vol')">
+            <i class="fa-solid fa-plane"></i> Vols
+        </button>
+        <button class="search-tab" onclick="switchTab('circuits')">
+            <i class="fa-solid fa-route"></i> Circuits
+        </button>
+        <button class="search-tab" onclick="switchTab('events')">
+            <i class="fa-solid fa-champagne-glasses"></i> Event Services
+        </button>
+    </div>
+    <form class="search-form-spa" id="search-form-travel">
+        <div class="search-fields-row">
+            <div class="search-field-box">
+                <label><i class="fa-solid fa-location-dot"></i> Destination</label>
+                <input type="text" placeholder="Ou allez-vous ?">
+            </div>
+            <div class="search-field-box">
+                <label><i class="fa-solid fa-calendar-days"></i> Dates</label>
+                <div class="field-value-display">Selectionner dates</div>
+            </div>
+            <div class="search-field-box">
+                <label><i class="fa-solid fa-users"></i> Chambres</label>
+                <div class="field-value-display">1 Chambre, 2 Adultes, 0 Enfant</div>
+            </div>
+        </div>
+        <div class="search-submit-container">
+            <button type="submit" class="search-submit-btn">Rechercher</button>
+        </div>
+    </form>
+</section>
+
+<!-- ========== DESTINATIONS SECTION ========== -->
+<section class="destinations-section" aria-label="Destinations">
+    <h2 class="section-h2">Nos Plus Belles Thematiques</h2>
+    <div class="destinations-grid">
+        <a href="#" class="destination-card" style="background-image: url('https://image.resabooking.com/images/galerie/slide_1.jpg');">
+            <div class="destination-overlay"></div>
+            <div class="destination-info">
+                <span class="destination-tag">Stories</span>
+                <h3 class="destination-name">Hammamet</h3>
+            </div>
+        </a>
+        <a href="#" class="destination-card" style="background-image: url('https://image.resabooking.com/images/galerie/slide_kusadasi_istanbul.jpg');">
+            <div class="destination-overlay"></div>
+            <div class="destination-info">
+                <span class="destination-tag">Stories</span>
+                <h3 class="destination-name">Djerba</h3>
+            </div>
+        </a>
+        <a href="#" class="destination-card" style="background-image: url('https://image.resabooking.com/images/galerie/18092025-0W2A4894.jpg');">
+            <div class="destination-overlay"></div>
+            <div class="destination-info">
+                <span class="destination-tag">Voyages</span>
+                <h3 class="destination-name">ISTANBUL 2026</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ========== HOTEL DEALS SECTION ========== -->
+<section class="hotel-deals-section" aria-label="Offres Hotels">
+    <div class="container">
+        <h2 class="section-h2">Nos Bons plans Ventes FLASH</h2>
+        <p class="section-subtitle-text">Hotels exclusifs selectionnes aux meilleurs prix</p>
+        <div class="hotel-cards-grid">
+            <div class="hotel-card">
+                <div class="hotel-card-image" style="background-image: url('https://image.resabooking.com/images/galerie/slide_1.jpg');">
+                    <span class="flash-tag">Flash -25%</span>
+                </div>
+                <div class="hotel-card-body">
+                    <h3 class="hotel-name">Djerba Plaza Thalasso & Spa</h3>
+                    <div class="hotel-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Djerba, Tunisie</p>
+                    <div class="hotel-price">
+                        <span class="price-label">Tarif par nuit</span>
+                        <span class="price-amount">135 <small>TND</small></span>
+                        <span class="price-date">Juillet 2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-card-image" style="background-image: url('https://image.resabooking.com/images/galerie/slide_kusadasi_istanbul.jpg');">
+                    <span class="flash-tag">Ultra All In</span>
+                </div>
+                <div class="hotel-card-body">
+                    <h3 class="hotel-name">The Orangers Beach Resort</h3>
+                    <div class="hotel-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Hammamet, Tunisie</p>
+                    <div class="hotel-price">
+                        <span class="price-label">Tarif par nuit</span>
+                        <span class="price-amount">180 <small>TND</small></span>
+                        <span class="price-date">Juillet 2026</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card">
+                <div class="hotel-card-image" style="background-image: url('https://image.resabooking.com/images/galerie/18092025-0W2A4894.jpg');">
+                    <span class="flash-tag">Luxe 5*</span>
+                </div>
+                <div class="hotel-card-body">
+                    <h3 class="hotel-name">Movenpick Resort Marine Spa</h3>
+                    <div class="hotel-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="hotel-location"><i class="fa-solid fa-location-dot"></i> Sousse, Tunisie</p>
+                    <div class="hotel-price">
+                        <span class="price-label">Tarif par nuit</span>
+                        <span class="price-amount">220 <small>TND</small></span>
+                        <span class="price-date">Juillet 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== GUARANTEES SECTION ========== -->
+<section class="guarantees-section">
+    <div class="container">
+        <h2 class="guarantees-title">Les Bonnes Raisons de faire appel a nous</h2>
+        <div class="guarantees-grid">
+            <div class="guarantee-card">
+                <div class="guarantee-icon"><i class="fa-solid fa-check"></i></div>
+                <h3 class="guarantee-title">Meilleur Prix Garanti</h3>
+                <p class="guarantee-desc">Hotel, voyage, billet d'avion aux meilleurs tarifs.</p>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3 class="guarantee-title">Service Clients 7/7</h3>
+                <p class="guarantee-desc">A votre ecoute tous les jours de l'annee.</p>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="guarantee-title">Paiement Securise</h3>
+                <p class="guarantee-desc">Reservations simples et 100% securisees.</p>
+            </div>
+            <div class="guarantee-card">
+                <div class="guarantee-icon"><i class="fa-solid fa-store"></i></div>
+                <h3 class="guarantee-title">56 Agences</h3>
+                <p class="guarantee-desc">A votre service a travers toute la Tunisie.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TRAVEL SERVICES SECTION ========== -->
+<section class="section services-section bg-light" id="travel-services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Agence de voyages</span>
+            <h2 class="section-title">Nos Services Travel</h2>
+            <p class="section-desc">Hotels, voyages organises, Omra, vols et conventions amicales — une agence complete pour vos deplacements.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #001e45, #003374);">
+                    <i class="fa-solid fa-hotel service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag">Travel</span>
+                    <h3 class="service-title">Hotels Tunisie</h3>
+                    <p class="service-desc">Reservation d'hotels aux meilleurs prix a travers tout le pays.</p>
+                    <a href="#hotels" class="service-link">Decouvrir <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #003374, #001e45);">
+                    <i class="fa-solid fa-kaaba service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag">Travel</span>
+                    <h3 class="service-title">Omra</h3>
+                    <p class="service-desc">Voyages Omra organises avec le plus grand soin et confort.</p>
+                    <a href="#omra" class="service-link">Decouvrir <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #001026, #003374);">
+                    <i class="fa-solid fa-earth-americas service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag">Travel</span>
+                    <h3 class="service-title">Voyages Organises</h3>
+                    <p class="service-desc">Circuits et sejours en Tunisie et a l'etranger.</p>
+                    <a href="#voyages" class="service-link">Decouvrir <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #003374, #001026);">
+                    <i class="fa-solid fa-plane service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag">Travel</span>
+                    <h3 class="service-title">Vols</h3>
+                    <p class="service-desc">Billets d'avion aux meilleurs tarifs vers toutes les destinations.</p>
+                    <a href="#vol" class="service-link">Decouvrir <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== EVENT SERVICES SECTION ========== -->
+<section class="section services-section" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Event Services</span>
+            <h2 class="section-title">Nos Services Evenementiels</h2>
+            <p class="section-desc">Des formats evenementiels concus avec precision, du concept creatif a la production terrain.</p>
+        </div>
+        <div class="services-grid services-grid-3">
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #e2a428, #f5c453);">
+                    <i class="fa-solid fa-people-group service-icon-dark"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-corporate">Corporate</span>
+                    <h3 class="service-title">Congres & Seminaires</h3>
+                    <p class="service-desc">Organisation complete de congres medicaux, seminaires d'entreprise et forums professionnels.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #001e45, #003374);">
+                    <i class="fa-solid fa-rocket service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-corporate">Corporate</span>
+                    <h3 class="service-title">Lancements de Produit</h3>
+                    <p class="service-desc">Evenements de lancement avec storytelling, spectacle et experiences immersives.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #003374, #001e45);">
+                    <i class="fa-solid fa-building-columns service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-institutionnel">Institutionnel</span>
+                    <h3 class="service-title">Evenements Institutionnels</h3>
+                    <p class="service-desc">Ceremonies officielles, visites protocolaires et forums nationaux.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #001026, #003374);">
+                    <i class="fa-solid fa-suitcase-rolling service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-mice">MICE</span>
+                    <h3 class="service-title">Incentive Travel</h3>
+                    <p class="service-desc">Voyages premium pour recompenser vos meilleurs performeurs.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #e2a428, #c98e1d);">
+                    <i class="fa-solid fa-champagne-glasses service-icon-dark"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-prestige">Prestige</span>
+                    <h3 class="service-title">Galas & Soirees</h3>
+                    <p class="service-desc">Soirees de gala, ceremonies de remise de prix et evenements de prestige.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="service-card service-card-event">
+                <div class="service-card-image" style="background: linear-gradient(135deg, #001e45, #001026);">
+                    <i class="fa-solid fa-people-arrows service-icon"></i>
+                </div>
+                <div class="service-card-body">
+                    <span class="service-tag tag-corporate">Corporate</span>
+                    <h3 class="service-title">Team Building</h3>
+                    <p class="service-desc">Activites de cohesion et team building sur mesure pour vos equipes.</p>
+                    <a href="#" class="service-link">Demander un devis <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== EXPERTISE SECTION ========== -->
+<section class="section expertise-section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Specialisation</span>
+            <h2 class="section-title">Nos Domaines d'Expertise</h2>
+            <p class="section-desc">Une expertise verticale profonde dans les secteurs les plus exigeants</p>
+        </div>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <div class="expertise-icon" style="background: #001e45;"><i class="fa-solid fa-trophy"></i></div>
+                <h3 class="expertise-name">MICE</h3>
+                <p class="expertise-desc">Meetings, Incentives, Congres, Expositions</p>
+                <span class="expertise-stat">200+ evenements</span>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon" style="background: #003374;"><i class="fa-solid fa-pills"></i></div>
+                <h3 class="expertise-name">Pharma</h3>
+                <p class="expertise-desc">Congres medicaux & formations scientifiques</p>
+                <span class="expertise-stat">150+ congres</span>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon" style="background: #001026;"><i class="fa-solid fa-landmark"></i></div>
+                <h3 class="expertise-name">Institutionnel</h3>
+                <p class="expertise-desc">Ceremonies officielles & forums nationaux</p>
+                <span class="expertise-stat">80+ ceremonies</span>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon" style="background: #e2a428;"><i class="fa-solid fa-briefcase"></i></div>
+                <h3 class="expertise-name">Corporate</h3>
+                <p class="expertise-desc">Seminaires, galas & lancements produit</p>
+                <span class="expertise-stat">300+ evenements</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PROJECTS / REALISATIONS SECTION ========== -->
+<section class="section projects-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Realisations</span>
+            <h2 class="section-title">Nos Realisations</h2>
+            <p class="section-desc">Une selection de projets concus pour creer du rythme, de la presence et des resultats mesurables.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://image.resabooking.com/images/galerie/slide_1.jpg');">
+                    <div class="project-overlay">
+                        <span class="project-category">Pharmaceutique</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Congres International de Cardiologie</h3>
+                    <p class="project-meta">PharmaCorp International — Tunis, 2025</p>
+                    <a href="#" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://image.resabooking.com/images/galerie/slide_kusadasi_istanbul.jpg');">
+                    <div class="project-overlay">
+                        <span class="project-category">Corporate</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Seminaire Leadership & Innovation</h3>
+                    <p class="project-meta">TechVision Group — Hammamet, 2026</p>
+                    <a href="#" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('https://image.resabooking.com/images/galerie/18092025-0W2A4894.jpg');">
+                    <div class="project-overlay">
+                        <span class="project-category">Institutionnel</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Forum National de l'Innovation</h3>
+                    <p class="project-meta">Ministere de l'Economie — Tunis, 2025</p>
+                    <a href="#" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PARTNERS SECTION ========== -->
+<section class="section partners-section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">References</span>
+            <h2 class="section-title">Ils nous font confiance</h2>
+            <p class="section-desc">Un reseau premium d'entreprises, institutions, hotels, prestataires techniques et partenaires MICE.</p>
+        </div>
+        <div class="partners-grid">
+            <div class="partner-item">
+                <i class="fa-solid fa-pills partner-icon"></i>
+                <span class="partner-name">Pharma</span>
+                <span class="partner-count">Congres medicaux</span>
+            </div>
+            <div class="partner-item">
+                <i class="fa-solid fa-briefcase partner-icon"></i>
+                <span class="partner-name">Corporate</span>
+                <span class="partner-count">Conventions & kick-offs</span>
+            </div>
+            <div class="partner-item">
+                <i class="fa-solid fa-landmark partner-icon"></i>
+                <span class="partner-name">Institutionnel</span>
+                <span class="partner-count">Forums & ceremonies</span>
+            </div>
+            <div class="partner-item">
+                <i class="fa-solid fa-people-group partner-icon"></i>
+                <span class="partner-name">MICE</span>
+                <span class="partner-count">Meetings & incentives</span>
+            </div>
+            <div class="partner-item">
+                <i class="fa-solid fa-hotel partner-icon"></i>
+                <span class="partner-name">Hospitality</span>
+                <span class="partner-count">Hotels 5 etoiles</span>
+            </div>
+            <div class="partner-item">
+                <i class="fa-solid fa-video partner-icon"></i>
+                <span class="partner-name">Production</span>
+                <span class="partner-count">AV, stands, scenographie</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PROCESS SECTION ========== -->
+<section class="section process-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Notre Methode</span>
+            <h2 class="section-title">Notre Processus</h2>
+            <p class="section-desc">6 etapes eprouvees pour transformer votre vision en realite</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-card">
+                <span class="process-step-number">01</span>
+                <div class="process-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3 class="process-title">Brief & Analyse</h3>
+                <p class="process-desc">Nous ecoutons vos objectifs et analysons vos besoins en profondeur pour definir la strategie parfaite.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step-number">02</span>
+                <div class="process-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3 class="process-title">Concept Creatif</h3>
+                <p class="process-desc">Notre equipe creative developpe un concept sur-mesure aligne a votre vision et votre identite.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step-number">03</span>
+                <div class="process-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                <h3 class="process-title">Planification</h3>
+                <p class="process-desc">Planification detaillee : budget, timeline, ressources et coordination de tous les intervenants.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step-number">04</span>
+                <div class="process-icon"><i class="fa-solid fa-gear"></i></div>
+                <h3 class="process-title">Production</h3>
+                <p class="process-desc">Mise en oeuvre operationnelle avec nos partenaires premium selectionnes avec soin.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step-number">05</span>
+                <div class="process-icon"><i class="fa-solid fa-rocket"></i></div>
+                <h3 class="process-title">Execution</h3>
+                <p class="process-desc">Coordination live le jour J pour une experience parfaite, sans accroc, memorable.</p>
+            </div>
+            <div class="process-card">
+                <span class="process-step-number">06</span>
+                <div class="process-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="process-title">Analyse & Suivi</h3>
+                <p class="process-desc">Reporting detaille et recommandations personnalisees pour vos futurs evenements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TESTIMONIALS SECTION ========== -->
+<section class="section testimonials-section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Ce qu'ils disent</span>
+            <h2 class="section-title">Temoignages Clients</h2>
+            <p class="section-desc">Ce que nos clients disent de leur experience avec BE HIVE EVENTS</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <strong class="testimonial-author">Dr. Mehdi Ben Salah</strong>
+                        <p class="testimonial-position">Directeur Medical</p>
+                        <p class="testimonial-company">PharmaCorp International</p>
+                    </div>
+                </div>
+                <div class="testimonial-body">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <blockquote class="testimonial-quote">Un professionnalisme exceptionnel. Le congres de cardiologie a depasse toutes nos attentes. L'equipe BE HIVE a su creer une experience immersive pour 900 participants.</blockquote>
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-rating">
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                    </div>
+                    <span class="badge badge-teal-light">Pharmaceutique</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">S</div>
+                    <div>
+                        <strong class="testimonial-author">Sarah Trabelsi</strong>
+                        <p class="testimonial-position">DRH</p>
+                        <p class="testimonial-company">TechVision Group</p>
+                    </div>
+                </div>
+                <div class="testimonial-body">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <blockquote class="testimonial-quote">Le seminaire de leadership a transforme notre equipe. L'organisation etait parfaite, du transfert a l'hotel en passant par les activities team building.</blockquote>
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-rating">
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                    </div>
+                    <span class="badge badge-gold-light">Corporate</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">A</div>
+                    <div>
+                        <strong class="testimonial-author">Ahmed Khelifi</strong>
+                        <p class="testimonial-position">Charge de Communication</p>
+                        <p class="testimonial-company">Ministere de l'Economie</p>
+                    </div>
+                </div>
+                <div class="testimonial-body">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <blockquote class="testimonial-quote">Le forum national de l'innovation a ete un veritable succes grace a BE HIVE. Leur maitrise du protocole et leur creativite ont fait la difference.</blockquote>
+                </div>
+                <div class="testimonial-footer">
+                    <div class="testimonial-rating">
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star filled"></i>
+                        <i class="fa-solid fa-star-half-stroke filled"></i>
+                    </div>
+                    <span class="badge badge-teal-light">Institutionnel</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CTA SECTION ========== -->
+<section class="cta-section">
+    <div class="cta-hexagons" aria-hidden="true">
+        <div class="cta-hex cta-hex-1"></div>
+        <div class="cta-hex cta-hex-2"></div>
+        <div class="cta-hex cta-hex-3"></div>
+    </div>
+    <div class="container cta-inner">
+        <div class="cta-content">
+            <h2 class="cta-title">Pret a creer votre evenement d'exception ?</h2>
+            <p class="cta-subtitle">Nos experts vous accompagnent de A a Z pour un evenement qui depasse vos attentes.</p>
+            <div class="cta-features">
+                <div class="cta-feature">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Devis gratuit sous 24h</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Expert dedie a votre projet</span>
+                </div>
+                <div class="cta-feature">
+                    <i class="fa-solid fa-check"></i>
+                    <span>100% sur-mesure</span>
+                </div>
+            </div>
+        </div>
+        <div class="cta-actions">
+            <a href="#devis" class="btn btn-primary btn-lg">Demander un Devis Gratuit</a>
+            <a href="#contact" class="btn btn-outline btn-lg">Nous Contacter</a>
+            <a href="tel:+21629111000" class="cta-phone">
+                <i class="fa-solid fa-phone"></i> +216 29 111 000
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section class="section contact-section bg-light" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Contact</span>
+            <h2 class="section-title">Nous Contacter</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Adresse</strong>
+                        <p>Les Berges du Lac, Tunis 1053, Tunisie</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Telephone</strong>
+                        <p><a href="tel:+21629111000">+216 29 111 000</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:hello@behive-agency.com">hello@behive-agency.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <strong>Horaires</strong>
+                        <p>Lundi - Vendredi : 08h00 - 17h00<br>Samedi : 08h00 - 13h00</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">Prenom</label>
+                        <input type="text" class="form-control" placeholder="Votre prenom">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control" placeholder="Votre nom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" placeholder="Votre message..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+    <div class="footer-main">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <span class="footer-logo">BE <span class="text-gold">HIVE</span></span>
+                <p class="footer-tagline">Your world. Our hive.</p>
+                <p class="footer-desc">Beehive Travel & Events — voyages premium et evenementiel MICE, Pharma et Institutionnel en Tunisie.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/behiveagencytn/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61576422462480" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/behivetn/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@behiveagency" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Nos Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Congres Medicaux</a></li>
+                    <li><a href="#">Seminaires d'Entreprise</a></li>
+                    <li><a href="#">Lancements de Produit</a></li>
+                    <li><a href="#">Evenements Institutionnels</a></li>
+                    <li><a href="#">Incentive & Travel</a></li>
+                    <li><a href="#">Soirees de Gala</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#hotels">Accueil</a></li>
+                    <li><a href="#services">Event Services</a></li>
+                    <li><a href="#projects">Realisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#devis" class="footer-cta">Demander un devis &rarr;</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Nous Contacter</h4>
+                <div class="footer-contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> Les Berges du Lac, Tunis 1053</p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+21629111000">+216 29 111 000</a></p>
+                    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:hello@behive-agency.com">hello@behive-agency.com</a></p>
+                </div>
+                <div class="footer-kpis">
+                    <div class="footer-kpi">
+                        <strong>500+</strong>
+                        <span>Evenements</span>
+                    </div>
+                    <div class="footer-kpi">
+                        <strong>98%</strong>
+                        <span>Satisfaction</span>
+                    </div>
+                    <div class="footer-kpi">
+                        <strong>2024</strong>
+                        <span>Depuis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <p>&copy; 2026 BE HIVE EVENTS. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Mentions Legales</a>
+                <a href="#">Politique de confidentialite</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Widget -->
+<div class="whatsapp-widget">
+    <a href="https://wa.me/21629111000" target="_blank" rel="noopener" class="whatsapp-toggle">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- Back to Top -->
+<a href="#top" class="back-to-top" id="back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<script>
+// Tab switching
+function switchTab(tabName) {
+    document.querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+    event.target.closest('.search-tab').classList.add('active');
+}
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('active');
+        mobileMenu.classList.toggle('active', !isOpen);
+        hamburger.setAttribute('aria-expanded', !isOpen);
+        document.body.style.overflow = isOpen ? '' : 'hidden';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        });
+    });
+}
+
+// Hero image swap
+const heroImages = [
+    'https://image.resabooking.com/images/galerie/slide_1.jpg',
+    'https://image.resabooking.com/images/galerie/slide_kusadasi_istanbul.jpg',
+    'https://image.resabooking.com/images/galerie/18092025-0W2A4894.jpg'
+];
+let currentSlide = 0;
+const heroSection = document.querySelector('.hero-section');
+const dots = document.querySelectorAll('.hero-dot');
+
+function updateHeroSlide() {
+    if (heroSection) {
+        heroSection.style.backgroundImage = `url('${heroImages[currentSlide]}')`;
+    }
+    dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+}
+
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        currentSlide = i;
+        updateHeroSlide();
+    });
+});
+
+setInterval(() => {
+    currentSlide = (currentSlide + 1) % heroImages.length;
+    updateHeroSlide();
+}, 3500);
+
+// Touch swipe for hero
+let touchStartX = 0;
+if (heroSection) {
+    heroSection.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    heroSection.addEventListener('touchend', e => {
+        const diff = touchStartX - e.changedTouches[0].screenX;
+        if (Math.abs(diff) > 50) {
+            currentSlide = diff > 0
+                ? (currentSlide + 1) % heroImages.length
+                : (currentSlide - 1 + heroImages.length) % heroImages.length;
+            updateHeroSlide();
+        }
+    }, { passive: true });
+}
+
+// Back to top
+const backToTop = document.getElementById('back-to-top');
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+    });
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
